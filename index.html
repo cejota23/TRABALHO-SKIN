@@ -1,37 +1,88 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Loja de Skin</title>
-  <link rel="stylesheet" href="./index.css">
-</head>
-<body>
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skins</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <script src="./assets/js/index.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <section id="cadastro">
+        <form action="home.html">
+          <h2>Cadastro</h2>
 
-  <header class="cabecalho">
-    <h1>SKINZY</h1>
-    <p>As melhores skins de CS e Valorant, direto no seu inventário</p>
-  </header>
+          <input
+            type="text"
+            maxlength="10"
+            placeholder="usuario"
+            required
+            class="campo"
+            name="fusuario"
+          />
 
-  <section class="secao-1" id="secao">
-    <h2>CS</h2>
-    <div class="grade">
-      <div class="quadrado">1</div>
-      <div class="quadrado">2</div>
-      <div class="quadrado">3</div>
-      <div class="quadrado">4</div>
-    </div>
-  </section>
+          <input
+            type="email"
+            maxlength="70"
+            placeholder="E-mail"
+            required
+            class="campo"
+            name="femail"
+          />
 
-  <section class="secao-2" id="secao">
-    <h2>Valorant</h2>
-    <div class="grade">
-      <div class="quadrado">1</div>
-      <div class="quadrado">2</div>
-      <div class="quadrado">3</div>
-      <div class="quadrado">4</div>
-    </div>
-  </section>
+          <input
+            type="password"
+            maxlength="12"
+            minlength="8"
+            placeholder="Senha"
+            required
+            class="campo"
+            name="fsenha"
+          />
 
-</body>
+          <input
+            type="password"
+            maxlength="12"
+            minlength="8"
+            placeholder="Senha"
+            required
+            class="campo"
+            name="fsenha2"
+          />
+
+          <button class="campo botao">Cadastrar</button>
+          <a href="#" class="alternar">Já tem conta? Entre!</a>
+        </form>
+      </section>
+
+      <section id="login">
+        <form action="home.html">
+          <h2>Login</h2>
+
+          <input
+            type="email"
+            maxlength="70"
+            placeholder="E-mail"
+            required
+            class="campo"
+            name="femail"
+          />
+
+          <input
+            type="password"
+            maxlength="12"
+            minlength="8"
+            placeholder="Senha"
+            required
+            class="campo"
+            name="fsenha"
+          />
+
+          <button class="campo botao">Login</button>
+          <a href="#" class="alternar">Criar Conta</a>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
